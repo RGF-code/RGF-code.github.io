@@ -84,7 +84,7 @@ a { color: inherit; }
 }
 
 .hero {
-  padding: 66px 0 74px;
+  padding: 66px 0 38px;
   text-align: center;
   background: var(--paper);
 }
@@ -154,7 +154,7 @@ h3 { margin-bottom: 8px; font-size: 1.25rem; line-height: 1.3; }
 .section { padding: 84px 0; background: var(--paper); }
 .figure-section { padding-top: 24px; }
 .overview-section { padding-top: 82px; }
-.visual-band { padding: 82px 0 92px; background: var(--paper); }
+.visual-band { padding: 36px 0 92px; background: var(--paper); }
 .visualization-section { border-top: 1px solid var(--line); }
 .table-section { background: var(--paper); }
 
@@ -251,11 +251,12 @@ figcaption { max-width: 900px; margin: 14px auto 0; color: var(--muted); font-si
   .site-nav { width: 100%; justify-content: flex-start; gap: 19px; overflow-x: auto; font-size: 0.78rem; scrollbar-width: none; }
   .site-nav::-webkit-scrollbar { display: none; }
   .site-nav a { flex: 0 0 auto; padding: 5px 0; }
-  .hero { padding: 42px 0 48px; }
+  .hero { padding: 42px 0 32px; }
   h1 { font-size: 2.55rem; }
   h2 { font-size: 1.8rem; }
   .narrow-width { width: min(calc(100% - 36px), var(--narrow)); }
-  .section, .visual-band { padding: 58px 0; }
+  .section { padding: 58px 0; }
+  .visual-band { padding: 40px 0; }
   .overview-section { padding-top: 62px; }
   .figure-section { padding-top: 10px; }
   .section-heading-row { align-items: flex-start; flex-direction: column; gap: 16px; }

@@ -37,28 +37,6 @@
       </div>
     </section>
 
-    <section class="section overview-section" id="overview" aria-labelledby="overview-title">
-      <div class="narrow-width">
-        <p class="section-kicker">Overview</p>
-        <h2 id="overview-title">Rectified geometric flow for fast, data-efficient reconstruction</h2>
-        <p class="lead">The deployment of high-fidelity single-view 3D reconstruction is currently stalled by the limitations of denoising diffusion probabilistic models (DDPMs). Despite their generation quality, DDPMs suffer from prohibitive latency due to iterative sampling and can converge unreliably in data-scarce regimes.</p>
-        <p>We introduce rectified geometric flow (RGF), a method that bypasses these bottlenecks by replacing stochastic diffusion with deterministic, straight-line ODE trajectories. This linearization is not merely an efficiency trick but simplifies the generative mapping, enabling robust learning on scarce data.</p>
-        <p>To prevent structural degradation during rapid generation, we integrate geometric injection as an explicit 3D scaffold and align local features through intrinsic manifold transport. In a matched comparison with the recent Point Diffusion Mamba (PDM) baseline, RGF achieves lower Chamfer Distance (CD) in 9 of 12 category settings and higher F1 in 9 of 12 (with one tie). On an RTX 3090, RGF takes 1.825 s per sample versus 20.73 s for PDM (11.4x faster), while using 3.46 GB rather than PDM's 0.39 GB of GPU memory.</p>
-      </div>
-    </section>
-
-    <section class="section figure-section" id="method" aria-labelledby="figure-one-title">
-      <div class="content-width">
-        <div class="section-heading">
-          <h2 id="figure-one-title">Method overview and efficiency frontier</h2>
-        </div>
-        <figure class="paper-figure figure-one">
-          <img src="./assets/paper-figures/figure1.png" alt="RGF overview and quality-efficiency comparison on ShapeNet-R2N2">
-          <figcaption>Figure 1. (a) RGF fuses image cues, geometry cues, and manifold aggregation for single-view reconstruction. (b) Quality-efficiency comparison on ShapeNet-R2N2 with 10% training data.</figcaption>
-        </figure>
-      </div>
-    </section>
-
     <section class="visual-band" id="qualitative" aria-label="Qualitative reconstruction">
       <div class="content-width">
         <div class="section-heading section-heading-row">
@@ -139,6 +117,28 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section overview-section" id="overview" aria-labelledby="overview-title">
+      <div class="narrow-width">
+        <p class="section-kicker">Overview</p>
+        <h2 id="overview-title">Rectified geometric flow for fast, data-efficient reconstruction</h2>
+        <p class="lead">The deployment of high-fidelity single-view 3D reconstruction is currently stalled by the limitations of denoising diffusion probabilistic models (DDPMs). Despite their generation quality, DDPMs suffer from prohibitive latency due to iterative sampling and can converge unreliably in data-scarce regimes.</p>
+        <p>We introduce rectified geometric flow (RGF), a method that bypasses these bottlenecks by replacing stochastic diffusion with deterministic, straight-line ODE trajectories. This linearization is not merely an efficiency trick but simplifies the generative mapping, enabling robust learning on scarce data.</p>
+        <p>To prevent structural degradation during rapid generation, we integrate geometric injection as an explicit 3D scaffold and align local features through intrinsic manifold transport. In a matched comparison with the recent Point Diffusion Mamba (PDM) baseline, RGF achieves lower Chamfer Distance (CD) in 9 of 12 category settings and higher F1 in 9 of 12 (with one tie). On an RTX 3090, RGF takes 1.825 s per sample versus 20.73 s for PDM (11.4x faster), while using 3.46 GB rather than PDM's 0.39 GB of GPU memory.</p>
+      </div>
+    </section>
+
+    <section class="section figure-section" id="method" aria-labelledby="figure-one-title">
+      <div class="content-width">
+        <div class="section-heading">
+          <h2 id="figure-one-title">Method overview and efficiency frontier</h2>
+        </div>
+        <figure class="paper-figure figure-one">
+          <img src="./assets/paper-figures/figure1.png" alt="RGF overview and quality-efficiency comparison on ShapeNet-R2N2">
+          <figcaption>Figure 1. (a) RGF fuses image cues, geometry cues, and manifold aggregation for single-view reconstruction. (b) Quality-efficiency comparison on ShapeNet-R2N2 with 10% training data.</figcaption>
+        </figure>
       </div>
     </section>
 
